@@ -16,13 +16,11 @@ if(isset($pieces[3])) $action=$pieces[3];
 	if (!isset($module) || $module =="")
 		$page = "home";
 	
-	else{
+	else
 		
-		if(!file_exists("controllers/".$module."Controller.php"))
-			$page = "404";
-		else
+		
 			$page = $_GET['module'];
-	}
+	
 		
 	
 
